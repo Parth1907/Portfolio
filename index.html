@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <section class="menu">
+        <button id="close-menu">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header class="header">
+        <nav class="default-nav">
+            <section>
+                <a href="#about-me">About Me</a>
+                <a href="#qualifications">Qualifications</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#technologies">Technologies</a>
+                <a href="#contact-me">Contact</a>
+            </section>
+            <section>
+                <button id="theme-switcher"></button>
+            </section>
+        </nav>
+        <nav class="mobile-nav">
+            <button id="menu-button">Menu</button>
+            <!-- <section>
+                <button id="theme-switcher"></button>
+            </section> -->
+        </nav>
+    </header>
+    
+    <main class="container">
+        <article class="intro">
+            <img id="profile-image" src="Parth-removebg-preview.png" alt="Profile pic">
+            <h1>Hi,I'm Parth Kalra </h1>
+            <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
+            <p class="social-links">
+                <a href="https://www.sololearn.com/" target="_blank">
+                    <img class="icon" alt="SoloLearn" src="https://www.sololearn.com/Uploads/icons/sololearn.png" />
+                </a>
+                <a href="https://github.com/Parth1907" target="_blank">
+                    <img class="icon" alt="Github" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+                </a>
+                <a href="https://www.linkedin.com/in/parth-kalra-740382254" target="">
+                    <img class="icon" alt="LinkedIn" src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png" />
+                </a>
+            </p>
+        </article>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hey! I'm <strong>Parth Kalra</strong>. I am currently a B.tech CSE Student, studying from Ansal University, who aspires to learn more about coding and web-development. 
+            </p>
+            <p>
+                Coding has changed my world. It's not just about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. I learned all  this from various resoureces like <i>Udemy</i>,<i>Upgrad</i> , <i>Devsnest</i> and from <i>SoloLearn</i>.
+            </p>
+            <p class="quote">"Declare variables, not war"</p>
+        </section>
+
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+            <ol>
+                <li>B.tech CSE (with specialisation in full stack development) [2021-2025]</li>
+            </ol>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Drawing</li>
+                <li>Listening to Music</li>
+                <li>Reading fiction/fantasy novels</li>
+                <li>Watching TV shows, Movies, Anime</li>
+            </ul>            
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies</h2>
+            <section class="container">
+                <section class="card">
+                    <header>
+                        <h1>Frontend</h1>
+                    </header>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                </section>
+
+                <section class="card">
+                    <header>
+                        <h1>Database</h1>
+                    </header>
+                        <ul>
+                            <li>MySQL</li>
+                        </ul>
+                </section>
+
+                <section class="card">
+                    <header> 
+                        <h1>Languages</h1>
+                    </header>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                        </ul>
+                </section>     
+
+            </section>
+        </section>
+        
+        <section id="contact-me">
+            <form name="contact" id="contact" method="post" data-netlify="true">
+                <h1>Contact Me</h1>
+                <section>
+                    <label for="firstName">First name</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </section><section>
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </section><section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="10" cols="30"></textarea>
+                </section>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Made with &hearts; By Parth with the help of Devsnest
+    </footer>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
